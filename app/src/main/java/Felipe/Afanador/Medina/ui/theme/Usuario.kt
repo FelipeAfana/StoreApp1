@@ -33,7 +33,7 @@ import androidx.compose.ui.unit.sp
 
 @Preview
 @Composable
-fun LoginScreen() {
+fun Usuario() {
     Scaffold { innerPadding ->
         Column(
             modifier = Modifier.padding(innerPadding).fillMaxSize()
@@ -50,7 +50,7 @@ fun LoginScreen() {
             )
 
             Text(
-                text = "Login",
+                text = "Crear Usuario",
                 color = Color(0xFFFF9900),
                 fontSize = 26.sp,
                 fontWeight = FontWeight.Bold
@@ -69,9 +69,20 @@ fun LoginScreen() {
                 },
                 shape = RoundedCornerShape(12.dp)
             )
-            
-
-            Spacer(modifier = Modifier.height(32.dp))
+            Spacer(modifier = Modifier.height(10.dp))
+            OutlinedTextField(
+                value = "",
+                onValueChange = {},
+                modifier = Modifier.fillMaxWidth(),
+                leadingIcon = {
+                    Icon(Icons.Default.Email, contentDescription = null)
+                },
+                label = {
+                    Text(text = "Nombre")
+                },
+                shape = RoundedCornerShape(12.dp)
+            )
+            Spacer(modifier = Modifier.height(10.dp))
             OutlinedTextField(
                 value = "",
                 onValueChange = {},
@@ -81,6 +92,19 @@ fun LoginScreen() {
                 },
                 label = {
                     Text(text = "Contraseña")
+                },
+                shape = RoundedCornerShape(12.dp)
+            )
+            Spacer(modifier = Modifier.height(10.dp))
+            OutlinedTextField(
+                value = "",
+                onValueChange = {},
+                modifier = Modifier.fillMaxWidth(),
+                leadingIcon = {
+                    Icon(Icons.Default.Lock, contentDescription = null)
+                },
+                label = {
+                    Text(text = "Confirmar contraseña")
                 },
                 shape = RoundedCornerShape(12.dp)
             )
@@ -97,17 +121,7 @@ fun LoginScreen() {
             {
                 Text(text = "Iniciar sesión")
             }
-            Spacer(modifier = Modifier.height(32.dp))
 
-            TextButton (
-                onClick = { },
-                modifier = Modifier
-                    .align(Alignment.CenterHorizontally)
-                    .fillMaxWidth()
-                    .padding(bottom = 16.dp)
-            ) {
-                Text(text = "No tienes cuenta, créala")
-            }
 
         }
     }

@@ -1,5 +1,6 @@
 package Felipe.Afanador.Medina
 
+import Felipe.Afanador.Medina.ui.theme.LoginScreen
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -12,6 +13,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import Felipe.Afanador.Medina.ui.theme.StoreAppTheme
+import androidx.compose.material3.rememberDateRangePickerState
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -20,6 +22,10 @@ class MainActivity : ComponentActivity() {
         setContent {
             StoreAppTheme {
 
+
+
+
+                LoginScreen()
 
             }
         }
