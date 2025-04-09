@@ -20,6 +20,7 @@ import androidx.compose.material3.Icon
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
+import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -49,7 +50,7 @@ fun LoginScreen() {
             )
 
             Text(
-                text = "Inician Sesión",
+                text = "Login",
                 color = Color(0xFFFF9900),
                 fontSize = 26.sp,
                 fontWeight = FontWeight.Bold
@@ -94,6 +95,17 @@ fun LoginScreen() {
             )
             {
                 Text(text = "Iniciar sesión")
+            }
+            Spacer(modifier = Modifier.height(32.dp))
+
+            TextButton (
+                onClick = { },
+                modifier = Modifier
+                    .align(Alignment.CenterHorizontally)
+                    .fillMaxWidth()
+                    .padding(bottom = 16.dp)
+            ) {
+                Text(text = "No tienes cuenta, créala")
             }
 
         }
