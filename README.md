@@ -1,9 +1,8 @@
 # My Kotlin Jetpack Compose Project - StoreApp
 
 <div align="center">
-    <img src="blob:https://web.whatsapp.com/5148283f-a443-43f2-8e23-906071634284" alt="Foto de Felipe Afanador" width="300">
-
-
+     <img src="https://cdn-0001.qstv.on.epicgames.com/lSxoPBCDpPvtmkeBQD/image/landscape_comp.jpeg" alt="Foto de Felipe Afanador" width="300"/>
+</div>
 
 # Studen Information
 ## Name: Felipe Afanador Median

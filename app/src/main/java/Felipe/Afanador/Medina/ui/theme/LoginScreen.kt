@@ -14,6 +14,8 @@ import androidx.compose.material.icons.filled.Email
 import androidx.compose.material.icons.filled.Lock
 import androidx.compose.material.icons.filled.Person
 import androidx.compose.material3.Button
+import androidx.compose.material3.ButtonColors
+import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.Icon
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Scaffold
@@ -30,15 +32,13 @@ import androidx.compose.ui.unit.sp
 
 @Preview
 @Composable
-fun LoginScreen(){
-    Scaffold { innerPadding->
-        Column (
-            modifier = Modifier.
-                padding(innerPadding).
-                fillMaxSize().
-                padding(end = 20.dp, start = 20.dp),
-            horizontalAlignment =Alignment.CenterHorizontally
-        ){
+fun LoginScreen() {
+    Scaffold { innerPadding ->
+        Column(
+            modifier = Modifier.padding(innerPadding).fillMaxSize()
+                .padding(end = 20.dp, start = 20.dp),
+            horizontalAlignment = Alignment.CenterHorizontally
+        ) {
             Image(
                 imageVector = Icons.Default.Person,
                 contentDescription = null,
@@ -50,7 +50,7 @@ fun LoginScreen(){
 
             Text(
                 text = "Inician Sesión",
-                color =Color(0xFFFF9900),
+                color = Color(0xFFFF9900),
                 fontSize = 26.sp,
                 fontWeight = FontWeight.Bold
             )
@@ -82,17 +82,20 @@ fun LoginScreen(){
                 },
                 shape = RoundedCornerShape(12.dp)
             )
-            Button(onClick = {},
-                modifier = Modifier.
-                fillMaxWidth().
-                height(50.dp
+            Spacer(modifier = Modifier.height(32.dp))
 
-            )) {
-                Text(text = "Iniciar sesión"),
-
+            Button(
+                onClick = {},
+                modifier = Modifier.fillMaxWidth().height(50.dp),
+                shape = RoundedCornerShape(12.dp),
+                colors = ButtonDefaults.buttonColors(
+                    containerColor = Color(0xFFFF9900)
+                )
+            )
+            {
+                Text(text = "Iniciar sesión")
             }
 
         }
-
     }
 }
