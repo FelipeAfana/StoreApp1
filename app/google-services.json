@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "643249767255",
+    "project_id": "storeapp-b5d62",
+    "storage_bucket": "storeapp-b5d62.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:643249767255:android:0961628bcc84270546f412",
+        "android_client_info": {
+          "package_name": "Felipe.Afanador.Medina"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB1LKZ-s8kgsrHJ4Kfj8qqwKKoP29mr5X8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
